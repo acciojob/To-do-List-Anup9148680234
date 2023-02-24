@@ -1,6 +1,6 @@
 //your code here
 function myFunc() {
-	let insertedValue = document.getElementById("newTodoInput").value;
+	let insertedValue = document.getElementById("newTodoInput").value.trim();
 	if(insertedValue != "") {
 		let orderedList = document.getElementsByTagName("ol")[0];
 		let createList = document.createElement("li");
